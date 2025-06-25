@@ -16,7 +16,7 @@ app.use(cookieParser()); // ✅ Cookie support
 
 
 app.use(cors({
-  origin: "http://localhost:5173", // frontend port
+  origin: "https://chatt-app-lilac.vercel.app", // frontend port
   credentials: true // ⬅️ Allow sending cookies
 }));
 app.use("/api/users", userRoutes); // ✅ Mount your routes AFTER middleware
