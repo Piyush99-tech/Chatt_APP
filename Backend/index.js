@@ -20,7 +20,7 @@ app.use(cors({
   credentials: true // ⬅️ Allow sending cookies
 }));
 app.use("/api/users", userRoutes); // ✅ Mount your routes AFTER middleware
-app.use("/api/message",messageRoute)
+app.use("/api/message",messageRoute);
 const URI = process.env.MONGODB_URI;
 
 mongoose.connect(URI)
