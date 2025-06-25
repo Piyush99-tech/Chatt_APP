@@ -13,7 +13,7 @@ function GetAllUsers() {
        
         const token = Cookies.get("token");
 
-        const response = await axios.get("/api/users/allusers", {
+        const response = await axios.get(`${import.meta.env.VITE_BACKEND_URL}/api/users/allusers`, {
           withCredentials: true,
           headers: {
             Authorization: `Bearer ${token}`, // only if your backend reads this

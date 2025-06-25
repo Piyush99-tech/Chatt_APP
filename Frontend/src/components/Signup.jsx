@@ -30,7 +30,7 @@ function Signup() {
         console.log(userInfo);
     try {
       const response = await axios
-      .post("/api/users/signup", userInfo,{
+      .post(`${import.meta.env.VITE_BACKEND_URL}/api/users/signup`, userInfo,{
   withCredentials: true // ⬅️ Required
 })
       toast.success("Signup successful");
