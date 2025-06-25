@@ -9,7 +9,7 @@ const server = http.createServer(app);
 // Attach Socket.IO to the server
 const io = new Server(server, {
   cors: {
-    origin: "http://localhost:5173",
+    origin: "https://chatt-app-lilac.vercel.app",
     methods: ["GET", "POST"],
     credentials: true
   },
